@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B374CF20957CAB0C1BCEA58 /* Pods_classic10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F764029C3E356B32966CB77 /* Pods_classic10.framework */; };
+		661DE9CC2722DD0700A7A423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DE9CB2722DD0700A7A423 /* AppDelegate.swift */; };
+		661DE9CE2722DE3000A7A423 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DE9CD2722DE3000A7A423 /* DataModel.swift */; };
+		661DE9D22722EEC500A7A423 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661DE9D12722EEC500A7A423 /* GoogleService-Info.plist */; };
 		664E7D73272224EB00BB27B4 /* classic10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E7D72272224EB00BB27B4 /* classic10App.swift */; };
 		664E7D75272224EB00BB27B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E7D74272224EB00BB27B4 /* ContentView.swift */; };
 		664E7D77272224EC00BB27B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664E7D76272224EC00BB27B4 /* Assets.xcassets */; };
@@ -14,11 +18,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F764029C3E356B32966CB77 /* Pods_classic10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_classic10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661DE9CB2722DD0700A7A423 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		661DE9CD2722DE3000A7A423 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		661DE9D12722EEC500A7A423 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		664E7D6F272224EB00BB27B4 /* classic10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classic10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		664E7D72272224EB00BB27B4 /* classic10App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classic10App.swift; sourceTree = "<group>"; };
 		664E7D74272224EB00BB27B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		664E7D76272224EC00BB27B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		664E7D79272224EC00BB27B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83AF1B06EFF0BA1FFD25A65C /* Pods-classic10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-classic10.debug.xcconfig"; path = "Target Support Files/Pods-classic10/Pods-classic10.debug.xcconfig"; sourceTree = "<group>"; };
+		E642D928C6A47AA434B26BC5 /* Pods-classic10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-classic10.release.xcconfig"; path = "Target Support Files/Pods-classic10/Pods-classic10.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B374CF20957CAB0C1BCEA58 /* Pods_classic10.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +48,8 @@
 			children = (
 				664E7D71272224EB00BB27B4 /* classic10 */,
 				664E7D70272224EB00BB27B4 /* Products */,
+				980EB0AC31D30DADAA375579 /* Pods */,
+				B2EC5E6ADD4BBD170FBCDD6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +64,11 @@
 		664E7D71272224EB00BB27B4 /* classic10 */ = {
 			isa = PBXGroup;
 			children = (
+				661DE9D12722EEC500A7A423 /* GoogleService-Info.plist */,
+				661DE9CB2722DD0700A7A423 /* AppDelegate.swift */,
 				664E7D72272224EB00BB27B4 /* classic10App.swift */,
 				664E7D74272224EB00BB27B4 /* ContentView.swift */,
+				661DE9CD2722DE3000A7A423 /* DataModel.swift */,
 				664E7D76272224EC00BB27B4 /* Assets.xcassets */,
 				664E7D78272224EC00BB27B4 /* Preview Content */,
 			);
@@ -67,6 +83,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		980EB0AC31D30DADAA375579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83AF1B06EFF0BA1FFD25A65C /* Pods-classic10.debug.xcconfig */,
+				E642D928C6A47AA434B26BC5 /* Pods-classic10.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2EC5E6ADD4BBD170FBCDD6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F764029C3E356B32966CB77 /* Pods_classic10.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 664E7D7D272224EC00BB27B4 /* Build configuration list for PBXNativeTarget "classic10" */;
 			buildPhases = (
+				CE11A2AF6E2D01029297F5AD /* [CP] Check Pods Manifest.lock */,
 				664E7D6B272224EB00BB27B4 /* Sources */,
 				664E7D6C272224EB00BB27B4 /* Frameworks */,
 				664E7D6D272224EB00BB27B4 /* Resources */,
+				5E866BFE7DE4C39FCBC77BFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,16 +162,61 @@
 			files = (
 				664E7D7A272224EC00BB27B4 /* Preview Assets.xcassets in Resources */,
 				664E7D77272224EC00BB27B4 /* Assets.xcassets in Resources */,
+				661DE9D22722EEC500A7A423 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E866BFE7DE4C39FCBC77BFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-classic10/Pods-classic10-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-classic10/Pods-classic10-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-classic10/Pods-classic10-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE11A2AF6E2D01029297F5AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-classic10-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		664E7D6B272224EB00BB27B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661DE9CC2722DD0700A7A423 /* AppDelegate.swift in Sources */,
+				661DE9CE2722DE3000A7A423 /* DataModel.swift in Sources */,
 				664E7D75272224EB00BB27B4 /* ContentView.swift in Sources */,
 				664E7D73272224EB00BB27B4 /* classic10App.swift in Sources */,
 			);
@@ -263,6 +343,7 @@
 		};
 		664E7D7E272224EC00BB27B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AF1B06EFF0BA1FFD25A65C /* Pods-classic10.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,7 +365,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.cherrystudio.classic10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = classic10;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,6 +374,7 @@
 		};
 		664E7D7F272224EC00BB27B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E642D928C6A47AA434B26BC5 /* Pods-classic10.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,7 +396,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.cherrystudio.classic10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = classic10;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
