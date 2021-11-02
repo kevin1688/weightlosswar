@@ -1,0 +1,6 @@
+framework module Pods_classic10 {
+  umbrella header "Pods-classic10-umbrella.h"
+
+  export *
+  module * { export * }
+}

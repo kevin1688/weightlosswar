@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TalkMsg: View {
     @Binding var msg:String
+    
     var body: some View {
         HStack {
             TextField("輸入訊息", text: $msg)
@@ -17,7 +18,6 @@ struct TalkMsg: View {
                 .background(Color.white)
                 .cornerRadius(4)
             Button {
-                
             } label: {
                 Text("送出")
                     .font(.title)

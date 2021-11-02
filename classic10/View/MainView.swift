@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var talkData = TalkData()
     
     @State var myselfHead = "lion"
     
@@ -15,13 +16,18 @@ struct MainView: View {
     
     var body: some View {
         VStack(alignment:.leading) {
-            ScrollView(showsIndicators:false) {
-                ForEach(talks){ tk in
-                    TalkView(head: tk.head, name: tk.name, talk: tk.talk, date: tk.date)
+            ScrollViewReader { value in
+                
+                ScrollView(showsIndicators:false) {
+                    
+                    ForEach(talkData.myTalks){ tk in
+                        TalkView(head: tk.head, name: tk.name, talk: tk.talk, date: tk.date)
+                    }
                 }
+                
+                TalkMsg(msg:$msg)
             }
             
-            TalkMsg(msg:$msg)
         }
         .frame(maxWidth:.infinity,maxHeight: .infinity)
     }
