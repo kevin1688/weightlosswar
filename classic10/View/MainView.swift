@@ -15,21 +15,30 @@ struct MainView: View {
     @State var msg = ""
     
     var body: some View {
-        VStack(alignment:.leading) {
-            ScrollViewReader { value in
+        ScrollViewReader{ value in
+            VStack(alignment:.leading) {
                 
                 ScrollView(showsIndicators:false) {
-                    
                     ForEach(talkData.myTalks){ tk in
                         TalkView(head: tk.head, name: tk.name, talk: tk.talk, date: tk.date)
                     }
+                    Text("最後").id("last")
+                        .foregroundColor(.clear)
                 }
                 
-                TalkMsg(msg:$msg)
+                TalkMsg(head: myselfHead, name: "kevin", msg: msg, date: Date()) {
+                    value.scrollTo("last", anchor: .bottomLeading)
+                }
+                
+                Text(talkData.listCollctionName())
+                    .padding(.leading,100)
+                
             }
+            .frame(maxWidth:.infinity,maxHeight: .infinity)
+            
             
         }
-        .frame(maxWidth:.infinity,maxHeight: .infinity)
+        
     }
 }
 
@@ -39,5 +48,9 @@ struct MainView_Previews: PreviewProvider {
     }
 }
 
-
+extension TalkData{
+    func listCollctionName() -> String {
+        return path
+    }
+}
 

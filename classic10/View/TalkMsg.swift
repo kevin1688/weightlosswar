@@ -8,7 +8,16 @@
 import SwiftUI
 
 struct TalkMsg: View {
-    @Binding var msg:String
+    
+    @State var head:String = ""
+    @State var name:String = ""
+    @State var msg:String = ""
+    @State var date:Date = Date()
+    
+    var down = {()->() in}
+    
+    
+    @StateObject var talkData = TalkData()
     
     var body: some View {
         HStack {
@@ -18,9 +27,12 @@ struct TalkMsg: View {
                 .background(Color.white)
                 .cornerRadius(4)
             Button {
+                talkData.add(talk(head: head, name: name, talk: msg, date: date))
+                down()
             } label: {
                 Text("送出")
                     .font(.title)
+                
             }
             .padding(5)
             .background(Color("button"))
@@ -34,6 +46,6 @@ struct TalkMsg: View {
 
 struct TalkMsg_Previews: PreviewProvider {
     static var previews: some View {
-        TalkMsg(msg: .constant(""))
+        TalkMsg()
     }
 }

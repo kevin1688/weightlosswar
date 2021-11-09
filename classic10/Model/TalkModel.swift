@@ -20,7 +20,7 @@ struct talk: Identifiable,Codable{
 }
 
 class TalkData: ObservableObject {
-    private let path: String = "Talk"
+    let path: String = "Talk"
     
     private let store = Firestore.firestore()
     
@@ -29,6 +29,7 @@ class TalkData: ObservableObject {
     init() {
         listenData()
     }
+    
     
     func addAll(_ talks: [talk]) {//新增整批資料
         myTalks.forEach { item in
