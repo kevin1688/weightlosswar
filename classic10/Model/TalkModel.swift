@@ -11,7 +11,7 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 
-struct talk: Identifiable,Codable{
+struct talk: Identifiable,Hashable,Codable{
     var id = UUID()
     var head:String
     var name:String

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B374CF20957CAB0C1BCEA58 /* Pods_classic10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F764029C3E356B32966CB77 /* Pods_classic10.framework */; };
+		66125201273B7221004F8896 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66125200273B7221004F8896 /* SearchBar.swift */; };
 		661DE9CC2722DD0700A7A423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DE9CB2722DD0700A7A423 /* AppDelegate.swift */; };
 		661DE9CE2722DE3000A7A423 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DE9CD2722DE3000A7A423 /* DataModel.swift */; };
 		661DE9D22722EEC500A7A423 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 661DE9D12722EEC500A7A423 /* GoogleService-Info.plist */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		2F764029C3E356B32966CB77 /* Pods_classic10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_classic10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66125200273B7221004F8896 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		661DE9CB2722DD0700A7A423 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		661DE9CD2722DE3000A7A423 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		661DE9D12722EEC500A7A423 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				6696EEB9273564CB005333EC /* SwiftUIView.swift */,
 				66AC705C273AA55100983017 /* ButtonDemo.swift */,
 				66AC705E273AB0D400983017 /* NavigationDemo.swift */,
+				66125200273B7221004F8896 /* SearchBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66125201273B7221004F8896 /* SearchBar.swift in Sources */,
 				6696EEB827355BE7005333EC /* Mod.swift in Sources */,
 				66A4D6B9272C2ED000E25790 /* TalkView.swift in Sources */,
 				661DE9CC2722DD0700A7A423 /* AppDelegate.swift in Sources */,
