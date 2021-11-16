@@ -8,7 +8,7 @@
 import SwiftUI
 struct SearchBar: View {
     
-    @ObservedObject var Source = TalkData()
+    @ObservedObject var Source = TalkData() //來源
     @Binding var searchData:[talk]
     @State var searchText = ""
     @State private var isEditing = false

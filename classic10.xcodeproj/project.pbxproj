@@ -18,6 +18,8 @@
 		664E7D7A272224EC00BB27B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664E7D79272224EC00BB27B4 /* Preview Assets.xcassets */; };
 		6671FD2C272C1C31007E59E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6671FD2B272C1C31007E59E5 /* MainView.swift */; };
 		6671FD2E272C1DDF007E59E5 /* TalkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6671FD2D272C1DDF007E59E5 /* TalkModel.swift */; };
+		6684BF2D2743C4DF00E63DE2 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6684BF2C2743C4DF00E63DE2 /* SignView.swift */; };
+		6684BF2F2743C60800E63DE2 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6684BF2E2743C60800E63DE2 /* AuthenticationViewModel.swift */; };
 		6696EEB827355BE7005333EC /* Mod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6696EEB727355BE7005333EC /* Mod.swift */; };
 		6696EEBA273564CB005333EC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6696EEB9273564CB005333EC /* SwiftUIView.swift */; };
 		66A4D6B9272C2ED000E25790 /* TalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A4D6B8272C2ED000E25790 /* TalkView.swift */; };
@@ -39,6 +41,9 @@
 		664E7D79272224EC00BB27B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6671FD2B272C1C31007E59E5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6671FD2D272C1DDF007E59E5 /* TalkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkModel.swift; sourceTree = "<group>"; };
+		6684BF2C2743C4DF00E63DE2 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		6684BF2E2743C60800E63DE2 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		6684BF302743CD0D00E63DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6696EEB727355BE7005333EC /* Mod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mod.swift; sourceTree = "<group>"; };
 		6696EEB9273564CB005333EC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		66A4D6B8272C2ED000E25790 /* TalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkView.swift; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		664E7D71272224EB00BB27B4 /* classic10 */ = {
 			isa = PBXGroup;
 			children = (
+				6684BF302743CD0D00E63DE2 /* Info.plist */,
 				6671FD2A272C1B17007E59E5 /* View */,
 				6671FD28272C1AEF007E59E5 /* Model */,
 				661DE9D12722EEC500A7A423 /* GoogleService-Info.plist */,
@@ -122,6 +128,8 @@
 				66AC705C273AA55100983017 /* ButtonDemo.swift */,
 				66AC705E273AB0D400983017 /* NavigationDemo.swift */,
 				66125200273B7221004F8896 /* SearchBar.swift */,
+				6684BF2C2743C4DF00E63DE2 /* SignView.swift */,
+				6684BF2E2743C60800E63DE2 /* AuthenticationViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,9 +272,11 @@
 				661DE9CC2722DD0700A7A423 /* AppDelegate.swift in Sources */,
 				661DE9CE2722DE3000A7A423 /* DataModel.swift in Sources */,
 				6696EEBA273564CB005333EC /* SwiftUIView.swift in Sources */,
+				6684BF2F2743C60800E63DE2 /* AuthenticationViewModel.swift in Sources */,
 				66A4D6BB272C362D00E25790 /* TalkMsg.swift in Sources */,
 				664E7D75272224EB00BB27B4 /* ContentView.swift in Sources */,
 				6671FD2C272C1C31007E59E5 /* MainView.swift in Sources */,
+				6684BF2D2743C4DF00E63DE2 /* SignView.swift in Sources */,
 				66AC705F273AB0D400983017 /* NavigationDemo.swift in Sources */,
 				664E7D73272224EB00BB27B4 /* classic10App.swift in Sources */,
 				66AC705D273AA55100983017 /* ButtonDemo.swift in Sources */,
@@ -405,6 +415,7 @@
 				DEVELOPMENT_TEAM = ELR2YX4DKY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = classic10/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,6 +447,7 @@
 				DEVELOPMENT_TEAM = ELR2YX4DKY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = classic10/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

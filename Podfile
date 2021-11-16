@@ -9,4 +9,6 @@ target 'classic10' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 end

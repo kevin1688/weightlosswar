@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     
     var body: some View {
-       MainView()
+        switch viewModel.state{
+            case .signedIn: MainView()
+            case .signedOut: SignView()
+        }
+       //MainView()
     }
     
 }

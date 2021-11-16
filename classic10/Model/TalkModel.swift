@@ -82,6 +82,9 @@ class TalkData: ObservableObject {
 
 let talks:[talk] = [
     talk(head: "lion", name: "kevin", talk: "今天過得如何？", date: Date()),
+    talk(head: "monk", name: "jeff", talk: "還不錯^^", date: Date()),
+    talk(head: "monk", name: "jeff", talk: "還不錯^^", date: Date()),
+    talk(head: "monk", name: "jeff", talk: "還不錯^^", date: Date()),
     talk(head: "monk", name: "jeff", talk: "還不錯^^", date: Date())
 ]
 

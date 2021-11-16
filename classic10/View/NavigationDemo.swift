@@ -10,29 +10,37 @@ import SwiftUI
 struct NavigationDemo: View {
     
     @State var SiderOnOff = false
+    @State var talkDemo = [talk]() //給搜尋填入的暫存
     
     var body: some View {
-        ZStack {
-            NavigationView {
-                List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                    NavigationLink {
-                        toRec(index: item)
-                    } label: {
-                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            SearchBar(searchData: $talkDemo)
+            ZStack {
+                NavigationView {
+                    ForEach(talkDemo){ item in
+                        Text("\(item.name)")
                     }
-                }
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            SiderOnOff.toggle()
+                    List(0 ..< 5) { item in
+                        NavigationLink {
+                            toRec(index: item)
                         } label: {
-                            Image(systemName: "list.dash")
+                            Text("Hello, World!")
+                            
                         }
                     }
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button {
+                                SiderOnOff.toggle()
+                            } label: {
+                                Image(systemName: "list.dash")
+                            }
+                        }
+                    }
+                    .navigationTitle("main")
                 }
-                .navigationTitle("main")
+                SiderMenu(SiderOnOff: $SiderOnOff)
             }
-            SiderMenu(SiderOnOff: $SiderOnOff)
         }
     }
 }
