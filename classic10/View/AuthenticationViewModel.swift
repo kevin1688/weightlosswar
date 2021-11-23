@@ -11,16 +11,20 @@ import GoogleSignIn
 import FirebaseAuth
 
 class AuthenticationViewModel: NSObject, ObservableObject {
+    
     enum SignInState {
         case signedIn
         case signedOut
     }
     
+    let auth = Auth.auth()
+    
     @Published var state: SignInState = .signedOut
+    @Published var errorOnOff = ""
     
     override init() {
         super.init()
-        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+        /*GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
             if error != nil || user == nil {
               // Show the app's signed-out state.
                 self.state = .signedOut
@@ -28,23 +32,32 @@ class AuthenticationViewModel: NSObject, ObservableObject {
               // Show the app's signed-in state.
                 self.state = .signedIn
             }
-          }
+          }*/
     }
-    /*
+    
     func authCreate(email:String,password:String){
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+        
+        
+        auth.createUser(withEmail: email, password: password) { authResult, error in
           // ...
+            if error != nil{
+              // Show the app's signed-out state.
+                self.errorOnOff = "false"
+            } else {
+              // Show the app's signed-in state.
+                self.state = .signedIn
+            }
         }
     }
     
     func authSignIn(email:String,password:String){
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+        auth.signIn(withEmail: email, password: password) { [weak self] authResult, error in
           guard let strongSelf = self else { return }
           // ...
             self!.state = .signedIn
         }
     }
-    */
+    
     func signIn() {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 

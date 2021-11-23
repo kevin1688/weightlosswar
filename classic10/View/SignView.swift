@@ -11,35 +11,55 @@ struct SignView: View {
     
     @EnvironmentObject var viewModel: AuthenticationViewModel
     
-    @AppStorage("abc") private var tapCount = 0
+    @AppStorage("tapCount") private var tapCount = 0
+    
+    @State var email = ""
+    @State var password = ""
     
     var body: some View {
-        VStack {
+        ZStack {
+            
+            VStack {
 
-            Button("Tap count: \(tapCount)") {
-                tapCount += 1
+                Button("Tap count: \(tapCount)") {
+                    tapCount += 1
+                }
+                
+                
+                VStack {
+                    
+                    TextField("輸入信箱", text: $email)
+                    TextField("輸入密碼", text: $password)
+                    Button {
+                         viewModel.authCreate(email: email, password: password)
+                    } label: {
+                        Text("New Account")
+                }
+                }
+                
+                Button {
+                    viewModel.authSignIn(email: "jackexi@gmail.com", password: "123456")
+                } label: {
+                    Text("login Account")
+                }
+                
+                
+                Button {
+                    viewModel.signIn()
+                } label: {
+                    Text("Google Login")
+                }
+                
             }
             
-            /*
-            Button {
-                viewModel.authCreate(email: "jackexi@gmail.com", password: "1234")
-            } label: {
-                Text("New Account")
+            ZStack {
+                Rectangle()
+                Text("輸入資訊有誤")
+                    .foregroundColor(.white)
             }
-            
-            Button {
-                viewModel.authSignIn(email: "jackexi@gmail.com", password: "1234")
-            } label: {
-                Text("login Account")
-            }
-             */
-            
-            Button {
-                viewModel.signIn()
-            } label: {
-                Text("Google Login")
-            }
-            
+            .frame(width: 200, height: 100, alignment: .center)
+            .offset(y: viewModel.errorOnOff != "" ? 0 : -1000)
+            .animation(.default)
         }
     }
 }
