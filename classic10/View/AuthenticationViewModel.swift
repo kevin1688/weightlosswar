@@ -20,7 +20,6 @@ class AuthenticationViewModel: NSObject, ObservableObject {
     let auth = Auth.auth()
     
     @Published var state: SignInState = .signedOut
-    @Published var errorOnOff = ""
     
     override init() {
         super.init()
@@ -35,14 +34,14 @@ class AuthenticationViewModel: NSObject, ObservableObject {
           }*/
     }
     
-    func authCreate(email:String,password:String){
+    func authCreate(email:String,password:String,complete:@escaping()->Void){
         
         
         auth.createUser(withEmail: email, password: password) { authResult, error in
           // ...
             if error != nil{
               // Show the app's signed-out state.
-                self.errorOnOff = "false"
+                complete()
             } else {
               // Show the app's signed-in state.
                 self.state = .signedIn

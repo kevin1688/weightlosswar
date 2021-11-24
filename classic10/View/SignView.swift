@@ -16,6 +16,8 @@ struct SignView: View {
     @State var email = ""
     @State var password = ""
     
+    @State var showAlert = false
+    
     var body: some View {
         ZStack {
             
@@ -31,7 +33,9 @@ struct SignView: View {
                     TextField("輸入信箱", text: $email)
                     TextField("輸入密碼", text: $password)
                     Button {
-                         viewModel.authCreate(email: email, password: password)
+                        viewModel.authCreate(email: email, password: password){
+                            self.showAlert = true
+                        }
                     } label: {
                         Text("New Account")
                 }
@@ -58,7 +62,7 @@ struct SignView: View {
                     .foregroundColor(.white)
             }
             .frame(width: 200, height: 100, alignment: .center)
-            .offset(y: viewModel.errorOnOff != "" ? 0 : -1000)
+            .offset(y: showAlert ? 0 : -1000)
             .animation(.default)
         }
     }
