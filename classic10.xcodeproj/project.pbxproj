@@ -26,6 +26,7 @@
 		66A4D6BB272C362D00E25790 /* TalkMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A4D6BA272C362D00E25790 /* TalkMsg.swift */; };
 		66AC705D273AA55100983017 /* ButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC705C273AA55100983017 /* ButtonDemo.swift */; };
 		66AC705F273AB0D400983017 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC705E273AB0D400983017 /* NavigationDemo.swift */; };
+		DA9C62D42750861C00390F6F /* Roy main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9C62D32750861C00390F6F /* Roy main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		66AC705C273AA55100983017 /* ButtonDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDemo.swift; sourceTree = "<group>"; };
 		66AC705E273AB0D400983017 /* NavigationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		83AF1B06EFF0BA1FFD25A65C /* Pods-classic10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-classic10.debug.xcconfig"; path = "Target Support Files/Pods-classic10/Pods-classic10.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9C62D32750861C00390F6F /* Roy main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Roy main.swift"; sourceTree = "<group>"; };
 		E642D928C6A47AA434B26BC5 /* Pods-classic10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-classic10.release.xcconfig"; path = "Target Support Files/Pods-classic10/Pods-classic10.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				6671FD2B272C1C31007E59E5 /* MainView.swift */,
+				DA9C62D32750861C00390F6F /* Roy main.swift */,
 				66A4D6B8272C2ED000E25790 /* TalkView.swift */,
 				66A4D6BA272C362D00E25790 /* TalkMsg.swift */,
 				6696EEB727355BE7005333EC /* Mod.swift */,
@@ -274,6 +277,7 @@
 				6696EEBA273564CB005333EC /* SwiftUIView.swift in Sources */,
 				6684BF2F2743C60800E63DE2 /* AuthenticationViewModel.swift in Sources */,
 				66A4D6BB272C362D00E25790 /* TalkMsg.swift in Sources */,
+				DA9C62D42750861C00390F6F /* Roy main.swift in Sources */,
 				664E7D75272224EB00BB27B4 /* ContentView.swift in Sources */,
 				6671FD2C272C1C31007E59E5 /* MainView.swift in Sources */,
 				6684BF2D2743C4DF00E63DE2 /* SignView.swift in Sources */,
