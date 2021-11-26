@@ -9,7 +9,11 @@ import SwiftUI
 
 struct TRYView: View {
     var body: some View {
+        Zstack{
+        Rectangle()
+                .background(Color.black)
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 
